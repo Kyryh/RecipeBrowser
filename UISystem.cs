@@ -29,7 +29,6 @@ namespace RecipeBrowser
                 if (i == ItemID.LihzahrdBrickWall) 
                     continue;
                 int shimmerTransmutation = ItemID.Sets.ShimmerTransformToItem[i];
-                Console.WriteLine($"{i}: {shimmerTransmutation}");
                 if (shimmerTransmutation > 0) {
 					Recipe.Create(shimmerTransmutation)
 						.AddIngredient(i)
